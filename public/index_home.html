@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="description" content="ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation" />
-  <meta name="keywords" content="Multilingual, Code, Large Language Models, LLM, Code LLM, Evaluation, Benchmark" />
+  <meta name="keywords" content="Artifacts, Code, Multimodal Large Language Models, Evaluation, Benchmark" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
     ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation
@@ -52,55 +52,12 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              LBdemo: Massively Multilingual Code Evaluation
+              ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation
             </h1>
-            
+      
        <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="">Linzheng Chai</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="">Shukai Liu</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="">Jian Yang</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.yuweiyin.com/">Yuwei Yin</a><sup>2</sup>,</span>
-              <span class="author-block">
-                <a href="">Ke Jin</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="">Jiaheng Liu</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="">Tao Sun</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="">Ge Zhang</a><sup>3</sup>,</span>
-              <span class="author-block">
-                <a href="">Changyu Ren</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="">Hongcheng Guo</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="">Zekun Wang</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="">Boyang Wang</a><sup>1</sup></span>
-              <span class="author-block">
-                <a href="">Xianjie Wu</a><sup>1</sup></span>
-              <span class="author-block">
-                <a href="">Bing Wang</a><sup>1</sup></span>
-              <span class="author-block">
-                <a href="">Tongliang Li</a><sup>4</sup></span>
-              <span class="author-block">
-                <a href="">Liqun Yang</a><sup>1</sup></span>
-              <span class="author-block">
-                <a href="">Sufeng Duan</a><sup>5</sup></span>
-              <span class="author-block">
-                <a href="">Zhoujun Li</a><sup>1</sup></span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>CCSE, Beihang University</span>
-              <span class="author-block"><sup>2</sup>University of British Columbia</span>
-              <span class="author-block"><sup>3</sup>University of Waterloo</span>
-              <span class="author-block"><sup>4</sup>Beijing Information Science and Technology University</span>
-              <span class="author-block"><sup>5</sup>Shanghai Jiao Tong University</span>
-            </div>
+          <span class="author-block">Tencent Hunyuan Team</span>
+        </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -114,7 +71,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/LBdemo/LBdemo"
+                  <a href="https://github.com/Tencent-Hunyuan/ArtifactsBenchmark"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -124,7 +81,7 @@
                 </span>
                 <!-- Dataset Link. -->
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/LBdemo"
+                  <a href="https://huggingface.co/datasets/tencent/ArtifactsBenchmark"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="far fa-images"></i>
@@ -133,7 +90,7 @@
                   </a>
                 </span>
 
-                <!-- Dataset Link. -->
+                <!-- Dataset Link.
                 <span class="link-block">
                   <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/LBdemo-Instruct"
                     class="external-link button is-normal is-rounded is-dark">
@@ -142,7 +99,8 @@
                     </span>
                     <span>LBdemo-Instruct</span>
                   </a>
-                </span>
+                </span> -->
+                
                 <!-- Leaderboard Link. -->
                 <span class="link-block">
                   <a href="leaderboard.html" class="external-link button is-normal is-rounded is-dark">
@@ -165,7 +123,7 @@
       <div class="hero-body">
         <div class="columns is-centered">
           <!-- center the image -->
-          <img src="./images/LBdemo_intro.png" alt="Teaser" class="teaser-image center" width="60%" />
+          <img src="./images/first_image.png" alt="Teaser" class="teaser-image center" width="60%" />
         </div>
         <!--
         <h2 class="subtitle has-text-centered">
@@ -188,12 +146,7 @@
           <h2 class="title is-3">Introduction</h2>
           <div class="content has-text-justified">
             <p>
-              LBdemo is the first massively multilingual code
-              evaluation benchmark (from human handwriting)
-              covering 40 languages (16K samples in 44 total),
-              encompassing multilingual code generation,
-              multilingual code explanation, and multilingual
-              code completion tasks.
+              ArtifactsBench is the first automated multimodal evaluation benchmark for LLM-generated visual artifacts that renders dynamic outputs, assesses fidelity and interactivity using MLLM judges guided by fine-grained checklists, and achieves over 94% human preference correlation across 1,825 diverse tasks.
             </p>
           </div>
         </div>
@@ -400,15 +353,11 @@
           <h2 class="title is-3">Dataset Statistics</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/1_statistics.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
+              <img src="./images/data_statis.png" alt="Dataset Statistics" class="teaser-image center" width="80%"
                 height="80%" />
             </div>
             <p>
-              We plot the length of input length, the length of output, and the number of
-              test cases of each programming language. The multilingual code generation and explanation tasks
-              separately contain 2K samples, where each language has nearly 50 samples. The code completion
-              task can be decomposed into multi-line completion (3K samples), single-line completion (3K samples),
-              span completion (4K samples), and span completion (light) (2K samples).
+              The ArtifactsBench benchmark comprises 1,825 high-quality, challenging queries organized into nine distinct categories: Game Development, SVG Generation, Web Applications, Simulations, Data Science, Management Systems, Multimedia Editing, Quick Tools, and Others. This structure ensures broad coverage of practical application domains.
             </p>
           </div>
         </div>
@@ -418,19 +367,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3"> Human Annotation & Quality Control</h2>
+          <h2 class="title is-3"> Dataset Construction Pipeline</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/2_bench_cases.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
+              <img src="./images/artifactsBenchmark_datacollect.png" alt="Dataset Construction Pipeline" class="teaser-image center" width="80%"
                 height="80%" />
             </div>
             <p>
-              To create the massively multilingual code evaluation benchmark LBdemo, the annotation of multilingual
-              code samples is conducted utilizing a comprehensive and systematic human annotation procedure,
-              underpinned by rigorously defined guidelines to ensure accuracy and consistency.
-              Following a detailed training session on the annotation protocol, which emphasizes the importance of context,
-              syntactical correctness, and semantic fidelity across languages, annotators are tasked with creating problem definitions and
-              the corresponding solution.
+              We organize ArtifactsBench creation as an eight-stage pipeline: Extraction & Filtering, Manual and LLM-based Rewrite & Polish, Classification and Difficulty Filtering, Small Sample Annotation, CheckList Generation, Model Generation, Manual QA Checking and Quality Control, and Final Data Consolidation. This structured process ensures the generation of diverse, high-quality tasks for robust evaluation of visual code generation.
             </p>
           </div>
         </div>
@@ -440,14 +384,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">mCoder</h2>
+          <h2 class="title is-3">Multi-Stage Automated Evaluation</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/3_framework.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
+              <img src="./images/Evaluation_Validity_verification .png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
                 height="80%" />
             </div>
             <p>
-              
+              To ensure the validity of our evaluation framework, we first rigorously assess the MLLM-as-judge approach by measuring its pairwise scoring agreement with human experts on a carefully curated task subset. After confirming its high reliability (achieving >90% agreement), we then deploy this automated judge for large-scale evaluation across the entire benchmark. The scoring process follows a structured three-stage pipeline: (1) Code Extraction, (2) Dynamic Rendering and Capture, and (3) MLLM-as-Judge Assessment.
             </p>
           </div>
         </div>
@@ -457,34 +401,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Further Analysis</h2>
+          <h2 class="title is-3">Model Performance on ArtifactsBench</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/4_code_class.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
+              <img src="./images/main_results_overview.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
                 height="80%" />
             </div>
             <p>
-              We categorize the programming languages of LBdemo into 5 programming paradigms and 11 application scenarios and summarize the performance of code LLMs on the code generation task. 
-            </p>
-          </div>
-        </div>
-      </div>
-</section>
-<section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Model Performance in Code Completion Tasks</h2>
-          <div class="content has-text-justified">
-            <div class="columns is-centered">
-              <img src="./images/5_radar_class_result.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
-                height="80%" />
-            </div>
-            <p>
-              It can be observed that code LLMs generally perform better in object-oriented and multi-paradigm
-              programming languages (high-resource languages), while perform worse in functional and procedural programming languages (low-resource languages).
-              In areas like web development and scientific computing, the gap between open-source and closed-source models is narrowing. However, for application scenarios, there is still a substantial gap
-              between open-source models and the closed-source GPT-4 series in low-resource languages related to scripting, mobile development, and educational research. mCoder performs superior over multiple same-size models and even some larger open-source models.
+              Our comprehensive evaluation covers over 30 state-of-the-art Large Language Models (LLMs), including both open-source and proprietary systems. The open-source cohort features 23 models spanning several influential families: the Qwen2.5 series, Qwen3 series, Gemma3 series, along with notable standalone models like Seed-Coder-8B-Instruct and the Deepseek series. For proprietary models, we evaluate 8 leading systems: Gemini-2.5-Pro-Preview-05-06, Claude 3.7 Sonnet (20250219), Claude 4 Sonnet (20250514), GPT-4o-2024-11-20, o3-mini-2025-01-31, Seed-thinking-1.5, and Hunyuan-TurboS-preview.
             </p>
           </div>
         </div>

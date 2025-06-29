@@ -35,16 +35,16 @@ const LeaderboardTabs = () => {
     switch (activeTab) {
       case 'tab1':
         return <Leaderboard theme={{ base: "light" }} args={[mockDataComplete, "complete"]} />;
-      case 'tab2':
-        return <Leaderboard theme={{ base: "light" }} args={[mockDataExpalin, "expalin"]} />;
-      case 'tab3':
-        return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingSingleLine, "infilling"]} />;
-      case 'tab4':
-        return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingMultiLine, "infilling"]} />;
-      case 'tab5':
-        return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingSpan, "infilling"]} />;
-      case 'tab6':
-        return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingLightSpan, "infilling"]} />;
+      // case 'tab2':
+      //   return <Leaderboard theme={{ base: "light" }} args={[mockDataExpalin, "expalin"]} />;
+      // case 'tab3':
+      //   return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingSingleLine, "infilling"]} />;
+      // case 'tab4':
+      //   return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingMultiLine, "infilling"]} />;
+      // case 'tab5':
+      //   return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingSpan, "infilling"]} />;
+      // case 'tab6':
+      //   return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingLightSpan, "infilling"]} />;
       default:
         return <div>Select a tab</div>;
     }
@@ -53,11 +53,11 @@ const LeaderboardTabs = () => {
     <div className="tabs-container">
       <ul className={`tabs ${isMobile ? 'mobile' : ''}`}>
         <li className={activeTab === 'tab1' ? 'is-active' : ''} onClick={() => setActiveTab('tab1')}><a>Complete</a></li>
-        <li className={activeTab === 'tab2' ? 'is-active' : ''} onClick={() => setActiveTab('tab2')}><a>Expalin</a></li>
+        {/* <li className={activeTab === 'tab2' ? 'is-active' : ''} onClick={() => setActiveTab('tab2')}><a>Expalin</a></li>
         <li className={activeTab === 'tab3' ? 'is-active' : ''} onClick={() => setActiveTab('tab3')}><a>Infilling Single Line</a></li>
         <li className={activeTab === 'tab4' ? 'is-active' : ''} onClick={() => setActiveTab('tab4')}><a>Infilling Multi Line</a></li>
         <li className={activeTab === 'tab5' ? 'is-active' : ''} onClick={() => setActiveTab('tab5')}><a>Infilling Span</a></li>
-        <li className={activeTab === 'tab6' ? 'is-active' : ''} onClick={() => setActiveTab('tab6')}><a>Infilling Light Span</a></li>
+        <li className={activeTab === 'tab6' ? 'is-active' : ''} onClick={() => setActiveTab('tab6')}><a>Infilling Light Span</a></li> */}
       </ul>
       <div className="tab-content">
         {renderLeaderboard()}
@@ -74,7 +74,7 @@ ReactDOM.render(
           <div className="columns  is-fullwidth">
             <div className="column has-text-centered is-fullwidth">
               <h1 className="title is-1 publication-title">
-                LBdemo: Massively Multilingual Code Evaluation
+                ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation
               </h1>
               <div className="column has-text-centered">
                 <div className="publication-links">
@@ -89,7 +89,7 @@ ReactDOM.render(
                   </span>
 
                   <span className="link-block">
-                    <a href="https://github.com/LBdemo/LBdemo"
+                    <a href="https://github.com/Tencent-Hunyuan/ArtifactsBenchmark"
                       className="external-link button is-normal is-rounded is-dark">
                       <span className="icon">
                         <i className="fab fa-github"></i>
@@ -99,7 +99,7 @@ ReactDOM.render(
                   </span>
 
                   <span className="link-block">
-                    <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/LBdemo"
+                    <a href="https://huggingface.co/datasets/tencent/ArtifactsBenchmark"
                       className="external-link button is-normal is-rounded is-dark">
                       <span className="icon">
                         <i className="far fa-images"></i>
@@ -108,7 +108,7 @@ ReactDOM.render(
                     </a>
                   </span>
 
-                  <span className="link-block">
+                  {/* <span className="link-block">
                     <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/LBdemo-Instruct"
                       className="external-link button is-normal is-rounded is-dark">
                       <span className="icon">
@@ -116,7 +116,7 @@ ReactDOM.render(
                       </span>
                       <span>LBdemo-Instruct</span>
                     </a>
-                  </span>
+                  </span> */}
 
                   <span className="link-block">
                     <a

@@ -418,21 +418,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Unbalance in Different Languages</h2>
+          <h2 class="title is-3">Scores of differenct difficulties</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/6_cross_dataset.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
+              <img src="./images/Score_of_diff_difficulty.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
                 height="80%" />
             </div>
             <p>
-              We compare the results of several open-source models on the Multipl-E multilingual benchmark with corresponding languages on LBdemo.
-              We obtained scores for 11 programming languages (including Python, Java, JavaScript, C++, PHP, Rust, Swift, R, Lua, Racket, and Julia) from the BigCode
-              leaderboard. As shown in Figure (1), due to the simplicity of Python language tasks in this dataset, many models exhibit significant score discrepancies between the
-              two benchmarks. By examining Figure (2) and (3), it becomes evident that all models demonstrate
-              consistent multilingual capabilities between Multipl-E and LBdemo. However, Figure (2) highlights
-              a majority of models within the blue circle, indicating that the current state-of-the-art performance
-              of most models primarily lies in high-resource languages like Python, while their proficiency in
-              low-resource languages awaits further exploration and enhancement.
+              We organize the benchmark into three tiers of increasing difficulty. Even the best-performing models struggle to surpass 50 points on the most challenging subset, indicating that our benchmark remains far from saturation. Notably, the models' relative rankings remain consistent across all difficulty levels, and each tier maintains strong discriminative power—demonstrating our benchmark's ability to reliably differentiate model capabilities at every level of challenge.
             </p>
           </div>
         </div>
@@ -442,19 +435,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Cross-lingual Transfer</h2>
+          <h2 class="title is-3">Ranking correlation between ArtifactsBench and WebDev Arena</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
-              <img src="./images/7_cross-lingual-transfer.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
+              <img src="./images/artifact-arena-rank.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
                 height="80%" />
             </div>
             <p>
-              We fine-tune the CodeQwen-1.5 model using Python-only data in LBdemo-Instruct
-              and compare it with mCoder. CodeQwen-1.5 performs well in most high-resource languages, but CodeQwen without alignment exhibits unsatisfactory results in
-              some low-resource languages due to the inability to follow instructions. As such, with fine-tuning using only Python data,
-              CodeQwen-1.5-Python improves significantly across most languages. It shows that the CodeQwen foundation model already possesses strong coding capabilities
-              but lacks adequate instruction-following skills. Therefore, fine-tuning with Python-only data can still effectively transfer instruction-following abilities to other languages,
-              resulting in superior multilingual performance.
+              We find that the model rankings from ArtifactsBench exhibit a remarkably high correlation with WebDev Arena, achieving a 94.4% consistency score. This score is calculated using the normalized Footrule metric, which quantifies the agreement between two ranked lists.
             </p>
           </div>
         </div>
@@ -479,7 +467,7 @@ across various languages. For most languages, the codeLLM can answer the majorit
         </div>
       </div>
 </section> -->
-<section class="section">
+<!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
@@ -538,7 +526,7 @@ across various languages. For most languages, the codeLLM can answer the majorit
           </div>
         </div>
       </div>
-</section>
+</section> -->
 <!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -562,7 +550,7 @@ across various languages. For most languages, the codeLLM can answer the majorit
       </div>
     </div>
 </section> -->
-<section class="section">
+<!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
@@ -582,16 +570,16 @@ across various languages. For most languages, the codeLLM can answer the majorit
           </div>
         </div>
       </div>
-</section>
+</section> -->
 
-<!--
+
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code></code></pre>
     </div>
   </section>
--->
+
   <footer class="footer">
     <div class="container">
 
@@ -599,9 +587,9 @@ across various languages. For most languages, the codeLLM can answer the majorit
         <div class="column is-8">
           <div class="content">
             <p>
-              Please reach out to <a href="challenging@buaa.edu.cn">challenging@buaa.edu.cn</a> for questions or
-              feedback on LBdemo. We are also open to collaborations and suggestions for new scenarios to add to
-              the benchmark. Finally, LBdemo provides one axis of LLM coding evaluations and we recommend the
+              Please reach out to <a href="adamwzhang@tencent.com">adamwzhang@tencent.com</a> for questions or
+              feedback on ArtifactsBench. We are also open to collaborations and suggestions for new scenarios to add to
+              the benchmark. Finally, ArtifactsBench provides one axis of LLM coding evaluations and we recommend the
               following leaderboards for measuring code LM ability on various coding tasks, such as
               <a href="https://livecodebench.github.io/leaderboard.html">LiveCodeBench Leaderboard</a>,
               <a href="https://evalplus.github.io/leaderboard.html">EvalPlus Leaderboard</a>,

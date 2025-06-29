@@ -1,6 +1,6 @@
-# LBdemo
+# ArtifactsBenchmark
 
-This is the repository that contains source code for the [LBdemo website](https://LBdemo.github.io/).
+This is the repository that contains source code for the [ArtifactsBenchmark website](https://ArtifactsBenchmark.github.io/).
 
 The code refers to [Livecode Bench website](https://livecodebench.github.io).
 

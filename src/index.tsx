@@ -109,18 +109,18 @@ ReactDOM.render(
                   </span>
 
                   {/* <span className="link-block">
-                    <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/LBdemo-Instruct"
+                    <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/ArtifactsBenchmark-Instruct"
                       className="external-link button is-normal is-rounded is-dark">
                       <span className="icon">
                         <i className="far fa-images"></i>
                       </span>
-                      <span>LBdemo-Instruct</span>
+                      <span>ArtifactsBenchmark-Instruct</span>
                     </a>
                   </span> */}
 
                   <span className="link-block">
                     <a
-                      href="https://LBdemo.github.io"
+                      href="https://bit-lyh.github.io/ArtifactsBenchmark.github.io/"
                       className="external-link button is-normal is-rounded is-dark"
                     >
                       <span className="icon">

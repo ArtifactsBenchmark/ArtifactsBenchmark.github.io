@@ -63,7 +63,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2406.07436" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -92,12 +92,12 @@
 
                 <!-- Dataset Link.
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/LBdemo-Instruct"
+                  <a href="https://huggingface.co/datasets/Multilingual-Multimodal-NLP/ArtifactsBenchmark-Instruct"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="far fa-images"></i>
                     </span>
-                    <span>LBdemo-Instruct</span>
+                    <span>ArtifactsBenchmark-Instruct</span>
                   </a>
                 </span> -->
                 
@@ -127,7 +127,7 @@
         </div>
         <!--
         <h2 class="subtitle has-text-centered">
-          <span class="dnerf">LBdemo</span> collects problems from periodic contests on <span
+          <span class="dnerf">ArtifactsBenchmark</span> collects problems from periodic contests on <span
             class="dnerf">LeetCode</span>, <span class="dnerf">AtCoder</span>, and <span class="dnerf">Codeforces</span>
           platforms and uses them for constructing a holistic benchmark for evaluating Code LLMs across variety of
           code-related scenarios continuously over time.
@@ -162,7 +162,7 @@
           <h2 class="title is-3">Contamination</h2>
           <div class="content has-text-justified">
             <p>
-              <span class="dnerf">LBdemo</span> annotates problems with release dates, and thus allows evaluating
+              <span class="dnerf">ArtifactsBenchmark</span> annotates problems with release dates, and thus allows evaluating
               models on problems released during a specific time period. Thus, for a newer model
               with a training-cutoff date <span class="dnerf">D</span>, we can evaluate it on problems released after
               <span class="dnerf">D</span> to measure its generalization on <i>unseen</i> problems.
@@ -196,7 +196,7 @@
           <h2 class="title is-3">Holistic Evaluation and Open vs Closed Models</h2>
           <div class="content has-text-justified">
             <p>
-              <span class="dnerf">LBdemo</span> evaluates models on a variety of code-related scenarios, such as
+              <span class="dnerf">ArtifactsBenchmark</span> evaluates models on a variety of code-related scenarios, such as
               code generation, self-repair, test output prediction, and code execution. We find that while model
               performances
               are correlated across different scenarios, there relative performances and ordering can vary (left
@@ -220,7 +220,7 @@
             </div>
             <p>
               We compare the performance of open access models with closed api-access models on <span
-                class="dnerf">LBdemo</span> and find that generally the closed api-access models outperform the
+                class="dnerf">ArtifactsBenchmark</span> and find that generally the closed api-access models outperform the
               open models. Particularly, the only open models that surpass the barrier are fine-tuned variants of large
               (30+B parameter) models.
             </p>
@@ -285,7 +285,7 @@
             </div>
             <p>
               The above plots depict the performance of models on different scenarios considered in <span
-                class="dnerf">LBdemo</span>. We find that <span class="dnerf">GPT-4-turbo</span> and <span
+                class="dnerf">ArtifactsBenchmark</span>. We find that <span class="dnerf">GPT-4-turbo</span> and <span
                 class="dnerf">Claude-3-Opus</span> models perform best across different scenarios. Among open source
               models, <span class="dnerf">DS-Ins-33B</span> and <span class="dnerf">Phind-34B</span> perform the best.
             </p>
@@ -303,7 +303,7 @@
           <div class="content has-text-justified">
             <p>
               To submit models to the leaderboard, you can run the evaluation using the evaluation scripts in
-              <a href="https://github.com/LBdemo/LBdemo">GitHub</a>. Once you have the results,
+              <a href="https://github.com/ArtifactsBenchmark/ArtifactsBenchmark">GitHub</a>. Once you have the results,
               you can fill out <a href="https://forms.gle/h2abvAHh6UnhWzzd9">this form</a>. You will need to fill out
               model details and provide the generated evaluation file with model generations and pass@1 scores. We will
               review the submission and add the model to the leaderboard accordingly.
@@ -452,14 +452,14 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">CodeQwen-1.5-Chat performance on LBdemo for problems of different difficulty levels.</h2>
+          <h2 class="title is-3">CodeQwen-1.5-Chat performance on ArtifactsBenchmark for problems of different difficulty levels.</h2>
           <div class="content has-text-justified">
             <div class="columns is-centered">
               <img src="./images/8_level_statistics.png" alt="HumanEval Overfitting" class="teaser-image center" width="80%"
                 height="80%" />
             </div>
             <p>
-              Based on algorithmic complexity, we classify LBdemo into three levels (Easy/Medium/Hard).
+              Based on algorithmic complexity, we classify ArtifactsBenchmark into three levels (Easy/Medium/Hard).
 In Figure 1, we conduct a statistical analysis of CodeQwen-1.5-Chat's performance on code generation tasks
 across various languages. For most languages, the codeLLM can answer the majority of easy questions but struggles with medium and hard ones.
             </p>
@@ -561,8 +561,8 @@ across various languages. For most languages, the codeLLM can answer the majorit
                 height="80%" />
             </div>
             <p>
-              As shown in the Figure, we analyzed the programming languages in the LBdemo from their presentation perspective.
-              We used CodeBERT to extract code representations from code snippets in LBdemo.
+              As shown in the Figure, we analyzed the programming languages in the ArtifactsBenchmark from their presentation perspective.
+              We used CodeBERT to extract code representations from code snippets in ArtifactsBenchmark.
               The figure clearly shows that languages with similar syntax have closely related representations.
               For example, other functional programming languages similar to CommonLisp, as well as C, C++, Java, and scripting
               languages, exhibit high grammar similarity.

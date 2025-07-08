@@ -120,7 +120,7 @@ ReactDOM.render(
 
                   <span className="link-block">
                     <a
-                      href="https://bit-lyh.github.io/ArtifactsBenchmark.github.io/"
+                      href="https://artifactsbenchmark.github.io/"
                       className="external-link button is-normal is-rounded is-dark"
                     >
                       <span className="icon">

@@ -34,9 +34,9 @@ const LeaderboardTabs = () => {
     // console.log(activeTab);
     switch (activeTab) {
       case 'tab1':
-        return <Leaderboard theme={{ base: "light" }} args={[mockDataComplete, "Gemini-2.5-Pro-0506"]} />;
+        return <Leaderboard theme={{ base: "light" }} args={[mockDataExpalin, "Judge-Model-Gemini-2.5-Pro | latest"]} />;
       case 'tab2':
-        return <Leaderboard theme={{ base: "light" }} args={[mockDataExpalin, "Gemini-2.5-Pro"]} />;
+        return <Leaderboard theme={{ base: "light" }} args={[mockDataComplete, "Judge-Model-Gemini-2.5-Pro-0506 | history"]} />;
       // case 'tab3':
       //   return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingSingleLine, "infilling"]} />;
       // case 'tab4':
@@ -52,8 +52,8 @@ const LeaderboardTabs = () => {
   return (
     <div className="tabs-container">
       <ul className={`tabs ${isMobile ? 'mobile' : ''}`}>
-        <li className={activeTab === 'tab1' ? 'is-active' : ''} onClick={() => setActiveTab('tab1')}><a>Gemini-2.5-Pro-0506</a></li>
-        <li className={activeTab === 'tab2' ? 'is-active' : ''} onClick={() => setActiveTab('tab2')}><a>Gemini-2.5-Pro</a></li>
+        <li className={activeTab === 'tab1' ? 'is-active' : ''} onClick={() => setActiveTab('tab1')}><a>Judge-Model-Gemini-2.5-Pro | latest</a></li>
+        <li className={activeTab === 'tab2' ? 'is-active' : ''} onClick={() => setActiveTab('tab2')}><a>Judge-Model-Gemini-2.5-Pro-0506 | history</a></li>
         {/* <li className={activeTab === 'tab3' ? 'is-active' : ''} onClick={() => setActiveTab('tab3')}><a>Infilling Single Line</a></li>
         <li className={activeTab === 'tab4' ? 'is-active' : ''} onClick={() => setActiveTab('tab4')}><a>Infilling Multi Line</a></li>
         <li className={activeTab === 'tab5' ? 'is-active' : ''} onClick={() => setActiveTab('tab5')}><a>Infilling Span</a></li>

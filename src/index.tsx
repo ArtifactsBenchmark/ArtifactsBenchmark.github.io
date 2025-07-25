@@ -9,7 +9,7 @@ import mockDataInfillingMultiLine from "./mocks/code_infilling_multi_line.json"
 import mockDataInfillingSingleLine from "./mocks/code_infilling_single_line.json"
 import mockDataInfillingSpan from "./mocks/code_infilling_span.json"
 import mockDataComplete from "./mocks/code_complete.json"
-import mockDataExpalin from "./mocks/code_expalin.json"
+import mockDataExpalin from "./mocks/artifacts_gemini_2.5_pro.json"
 
 
 const LeaderboardTabs = () => {
@@ -34,9 +34,9 @@ const LeaderboardTabs = () => {
     // console.log(activeTab);
     switch (activeTab) {
       case 'tab1':
-        return <Leaderboard theme={{ base: "light" }} args={[mockDataComplete, "complete"]} />;
-      // case 'tab2':
-      //   return <Leaderboard theme={{ base: "light" }} args={[mockDataExpalin, "expalin"]} />;
+        return <Leaderboard theme={{ base: "light" }} args={[mockDataComplete, "Gemini-2.5-Pro-0506"]} />;
+      case 'tab2':
+        return <Leaderboard theme={{ base: "light" }} args={[mockDataExpalin, "Gemini-2.5-Pro"]} />;
       // case 'tab3':
       //   return <Leaderboard theme={{ base: "light" }} args={[mockDataInfillingSingleLine, "infilling"]} />;
       // case 'tab4':
@@ -52,9 +52,9 @@ const LeaderboardTabs = () => {
   return (
     <div className="tabs-container">
       <ul className={`tabs ${isMobile ? 'mobile' : ''}`}>
-        <li className={activeTab === 'tab1' ? 'is-active' : ''} onClick={() => setActiveTab('tab1')}><a>Complete</a></li>
-        {/* <li className={activeTab === 'tab2' ? 'is-active' : ''} onClick={() => setActiveTab('tab2')}><a>Expalin</a></li>
-        <li className={activeTab === 'tab3' ? 'is-active' : ''} onClick={() => setActiveTab('tab3')}><a>Infilling Single Line</a></li>
+        <li className={activeTab === 'tab1' ? 'is-active' : ''} onClick={() => setActiveTab('tab1')}><a>Gemini-2.5-Pro-0506</a></li>
+        <li className={activeTab === 'tab2' ? 'is-active' : ''} onClick={() => setActiveTab('tab2')}><a>Gemini-2.5-Pro</a></li>
+        {/* <li className={activeTab === 'tab3' ? 'is-active' : ''} onClick={() => setActiveTab('tab3')}><a>Infilling Single Line</a></li>
         <li className={activeTab === 'tab4' ? 'is-active' : ''} onClick={() => setActiveTab('tab4')}><a>Infilling Multi Line</a></li>
         <li className={activeTab === 'tab5' ? 'is-active' : ''} onClick={() => setActiveTab('tab5')}><a>Infilling Span</a></li>
         <li className={activeTab === 'tab6' ? 'is-active' : ''} onClick={() => setActiveTab('tab6')}><a>Infilling Light Span</a></li> */}

@@ -29,6 +29,20 @@
         "MS": 55.38
     },
     {
+        "AVG": 55.01,
+        "model": "Qwen3-235B-A22B-Thinking-2507",
+        "IFLEN": 34357.84,
+        "SV": 53.63,
+        "MMD": 55.66,
+        "HD": 56.90,
+        "II": 54.32,
+        "GAME": 56.35,
+        "SVG": 44.80,
+        "WEB": 55.90,
+        "SI": 57.35,
+        "MS": 54.09
+    },
+    {
         "AVG": 54.04,
         "model": "o3-2025-04-16",
         "IFLEN": null,
@@ -141,6 +155,20 @@
         "MS": 42.17
     },
     {
+        "AVG": 41.41,
+        "model": "DeepSeek-R1",
+        "IFLEN": 10751.63,
+        "SV": 42.99,
+        "MMD": 43.75,
+        "HD": 43.69,
+        "II": 38.68,
+        "GAME": 40.89,
+        "SVG": 42.43,
+        "WEB": 41.91,
+        "SI": 40.80,
+        "MS": 39.82
+    },
+    {
         "AVG": 41.09,
         "model": "Qwen3-235B-A22B",
         "IFLEN": 19314.92,
@@ -184,7 +212,7 @@
     },
     {
         "AVG": 35.21,
-        "model": "KAT-V1",
+        "model": "KAT-V1-40B",
         "IFLEN": 23262.57,
         "SV": 34.34,
         "MMD": 37.67,
@@ -195,7 +223,21 @@
         "WEB": 35.84,
         "SI": 37.17,
         "MS": 35.78
-        }
+    },
+    {
+        "AVG": 33.54,
+        "model": "GPT-4O",
+        "IFLEN": 4882.36,
+        "SV": 34.91,
+        "MMD": 33.59,
+        "HD": 35.74,
+        "II": 31.30,
+        "GAME": 33.04,
+        "SVG": 33.75,
+        "WEB": 34.22,
+        "SI": 31.44,
+        "MS": 32.10
+    }
     ],
     "models": [
         {
@@ -203,6 +245,9 @@
         },
         {
             "model_name": "Claude Sonnet 4 (20250514)"
+        },
+        {
+            "model_name": "Qwen3-235B-A22B-Thinking-2507"
         },
         {
             "model_name": "o3-2025-04-16"
@@ -229,6 +274,9 @@
             "model_name": "DeepSeek-V3-0324"
         },
         {
+            "model_name": "DeepSeek-R1"
+        },
+        {
             "model_name": "Qwen3-235B-A22B"
         },
         {
@@ -238,7 +286,10 @@
             "model_name": "Claude 3.5 Sonnet (20241022)"
         },
         {
-            "model_name": "KAT-V1"
+            "model_name": "KAT-V1-40B"
+        },
+        {
+            "model_name": "GPT-4O"
         }
     ],
     "date_marks": [

@@ -226,7 +226,7 @@
     },
     {
         "AVG": 33.54,
-        "model": "GPT-4O",
+        "model": "GPT-4o",
         "IFLEN": 4882.36,
         "SV": 34.91,
         "MMD": 33.59,
@@ -289,7 +289,7 @@
             "model_name": "KAT-V1-40B"
         },
         {
-            "model_name": "GPT-4O"
+            "model_name": "GPT-4o"
         }
     ],
     "date_marks": [

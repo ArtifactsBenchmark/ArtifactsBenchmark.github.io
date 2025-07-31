@@ -9,7 +9,7 @@ import mockDataInfillingMultiLine from "./mocks/code_infilling_multi_line.json"
 import mockDataInfillingSingleLine from "./mocks/code_infilling_single_line.json"
 import mockDataInfillingSpan from "./mocks/code_infilling_span.json"
 import mockDataComplete from "./mocks/code_complete.json"
-import mockDataExpalin from "./mocks/artifacts_gemini_2.5_pro.json"
+import mockDataExpalin from "./mocks/artifacts1.json"
 
 
 const LeaderboardTabs = () => {

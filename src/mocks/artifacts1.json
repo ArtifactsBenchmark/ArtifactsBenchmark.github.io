@@ -16,7 +16,7 @@
     },
     {
         "AVG": 59.76,
-        "model": "claude-opus-4-1",
+        "model": "Claude-opus-4-1",
         "IFLEN": null,
         "SV": 58.07,
         "MMD": 60.47,
@@ -58,7 +58,7 @@
     },
     {
         "AVG": 56.91,
-        "model": "gpt-oss-120b",
+        "model": "GPT-OSS-120B",
         "IFLEN": 16018.79,
         "SV": 58.11,
         "MMD": 56.78,

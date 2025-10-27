@@ -15,6 +15,34 @@
         "MS": 53.18
     },
     {
+        "AVG": 59.31,
+        "model": "Ling-1T",
+        "IFLEN": null,
+        "SV": null,
+        "MMD": null,
+        "HD": null,
+        "II": null,
+        "GAME": null,
+        "SVG": null,
+        "WEB": null,
+        "SI": null,
+        "MS": null
+    },
+    {
+        "AVG": 66.80,
+        "model": "MiniMax-M2",
+        "IFLEN": null,
+        "SV": null,
+        "MMD": null,
+        "HD": null,
+        "II": null,
+        "GAME": null,
+        "SVG": null,
+        "WEB": null,
+        "SI": null,
+        "MS": null
+    },
+    {
         "AVG": 57.28,
         "model": "Claude Sonnet 4 (20250514)",
         "IFLEN": null,

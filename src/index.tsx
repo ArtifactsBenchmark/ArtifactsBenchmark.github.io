@@ -142,6 +142,18 @@ ReactDOM.render(
         </div>
       </div>
     </section>
+    <section className="section">
+      <div className="container">
+        <footer className="footer">
+          <div className="content has-text-centered">
+            <p>
+            * indicates that the data originates from official technical reports and other third-party evaluations.
+            0 means unknown.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </section>
   </React.StrictMode>,
   document.getElementById("root")
 )

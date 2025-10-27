@@ -14,6 +14,7 @@ import Box from "@mui/material/Box"
 import Slider from "@mui/material/Slider"
 import { ThemeProvider, createTheme } from "@mui/material/styles"
 import CssBaseline from "@mui/material/CssBaseline"
+import { ValueFormatterParams } from "ag-grid-community";
 
 import {
   getColumnDefs,
@@ -136,9 +137,24 @@ const Leaderboard = React.memo(function LeaderboardComponent(props: any) {
 
   // Object.keys(leaderboard[0])
 
+  // const defaultColDef = useMemo(() => {
+  //   return {
+  //     flex: 1,
+  //   }
+  // }, [])
   const defaultColDef = useMemo(() => {
     return {
       flex: 1,
+      // 直接将 params 的类型注解为 any
+      valueFormatter: (params: any) => { 
+        if (params.value === 0) {
+          return '-';
+        }
+        if (params.value == null) {
+          return '-';
+        }
+        return params.value;
+      }
     }
   }, [])
 
